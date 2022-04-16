@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Button from "./components/basics/Button";
 
-export default function login() {
+export default function loginPage() {
   function hi() {
     console.log("hi");
   }

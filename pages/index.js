@@ -11,9 +11,9 @@ export default function Home() {
       <h1 className={`${other_styles.title} ${other_styles.large}`}>
         Welcome to QuickFix
       </h1>
-      <Button title="Login" redirect="/login" />
-      <div className={styles.vertical_spacer}></div>
-      <Button title="Sign up" redirect="/login" />
+      <Button title="Login" redirect="/api/login" />
+      <div className={styles.vertical_spacer} />
+      <Button title="Sign up" redirect="/" />
     </div>
   );
 }
