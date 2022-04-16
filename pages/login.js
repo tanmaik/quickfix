@@ -4,8 +4,8 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
 
-export default function Home() {
+export default function login() {
   return (
-    <div className={styles.main}><Link href="/login"><h1>Go to login</h1></Link></div>
+    <div><Link href="/"><a>Go back home</a></Link></div>
   )
 }
