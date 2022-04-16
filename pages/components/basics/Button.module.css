@@ -1,0 +1,16 @@
+.outline {
+  text-align: center;
+  width: 20%;
+  height: 9%;
+  background: rgb(35, 88, 168);
+  border-radius: 30px;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+.outline:hover {
+  background: rgb(81, 118, 173);
+  font-size: 1.2rem;
+  transition: 0.2s;
+  cursor: pointer;
+}

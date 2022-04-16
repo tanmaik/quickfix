@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.vertical_spacer {
+  height: 10px;
+}
+
 .footer {
   display: flex;
   flex: 1;
