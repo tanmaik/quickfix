@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  return "Hello World"
+  return <Component {...pageProps} />
 }
 
 export default MyApp
