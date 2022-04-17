@@ -1,158 +1,139 @@
-$dark: #fffaef;
-
-.flex-row {
-  display:flex;
-  flex-flow:row;
-  align-items:center;
-  background-color: #bbcaf5;
+$dark: #131325;
+.clearfix {
+  background-color: green;
 }
-.flex-column{
-  display:flex;
-  flex-flow:column;
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.flex-column {
+  display: flex;
+  flex-flow: column;
 }
 .title {
-  font-size:1em;
-  color:black;
-  letter-spacing:1px;
+  font-size: 1em;
+  color: black;
+  letter-spacing: 1px;
 }
 .author {
-  font-size:50px;
-  font-weight:normal;
-  color:#888;
+  font-size: 50px;
+  font-weight: normal;
+  color: #888;
 }
 .center {
-    align-items:center;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
+  align-items: center;
+  top: 50%;
+  left: 50%;
 }
 .list {
-  border-radius:3px;
-  overflow:hidden;
-  background-color:lighten($dark,8%);
-  box-shadow:0px 2px 10px rgba(0,0,0,.2);
-  overflow:hidden;
-  height:90px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: lighten($dark, 8%);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 90px;
 }
 .card {
-    cursor:pointer;
-    min-width:700px;
-    margin-bottom:10px;
-    perspective:600px;
-    transition:all 0.1s;
-    button.simple {
-      cursor:pointer;
-      color:#434343;
-      border:none;
-      outline:none;
-      border-radius:4px;
-      background-color:#1ea94b;
-      padding:15px 20px;
-      font-family:'Roboto';
-      font-weight:bold;
-      transition:all 0.1s;
-  }
+  cursor: pointer;
+  min-width: 700px;
+  margin-bottom: 4px;
+  perspective: 600px;
+  transition: all 0.1s;
 }
-
+button.simple {
+  cursor: pointer;
+  color: #ccc;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #1ea94b;
+  padding: 15px 20px;
+  font-family: "Roboto-bold";
+  font-weight: bold;
+  transition: all 0.1s;
+}
 .bottom {
-      height:0px;
-      overflow:hidden;
-      width:200px;
-      font-size:12px;
-      color:#000000;
-      font-weight:normal;
-  }
+  height: 0px;
+  overflow: hidden;
+  width: 200px;
+  font-size: 12px;
+  color: #777;
+  font-weight: normal;
+}
 .open {
-  padding:30px;
-  height:auto;
+  padding: 30px;
+  height: auto;
 }
 .bottom {
-  margin-top:10px;
-  height:100%;
-  overflow:visible;
+  height: 0px;
+  overflow: hidden;
+  width: 200px;
+  font-size: 12px;
+  color: #000000;
+  font-weight: normal;
+}
+.open {
+  padding: 30px;
+  height: auto;
+}
+.bottom {
+  margin-top: 10px;
+  height: 100%;
+  overflow: visible;
 }
 .book {
-  transform:rotateY( 50deg );
-  box-shadow:-10px 10px 10px 2px rgba(0,0,0,.2), -2px 0px 0px 0px #888;
-  transition:all 0.5s;
-  transition-delay:0.05s;
+  transform: rotateY(50deg);
+  box-shadow: -10px 10px 10px 2px rgba(0, 0, 0, 0.2), -2px 0px 0px 0px #888;
+  transition: all 0.5s;
+  transition-delay: 0.05s;
 }
 .info {
-  transform:translate(0,-10px);
+  transform: translate(0, -10px);
 }
 .members {
-    padding:15px 20px;
-    border-radius:4px;
-    align-self:flex-start;
+  padding: 15px 20px;
+  border-radius: 4px;
+  align-self: flex-start;
 }
-.card:hover {
-  box-shadow:0px 15px 20px -5px rgba(0,0,0,.3);
-  transform:translate(0,-2px);
-}  
-.open:hover {
-  box-shadow:0px 15px 20px -5px rgba(0,0,0,.3);
-  transform:translate(0,-2px);
+.book:hover {
+  box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -2px);
 }
-.info:hover {
-        box-shadow:0px 15px 20px -5px rgba(0,0,0,.3);
-        transform:translate(0,-2px);
-      }
+
 .book {
-  transition:all 0.5s;
-  width:120px;
-  box-shadow:0px 2px 10px rgba(0,0,0,0.3);
-  overflow:hidden;
+  transition: all 0.5s;
+  width: 120px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 .info {
-  transition:all 0.2s;
-  min-width:200px;
-  padding:0px 30px;
-  font-family:'Roboto';
-  font-weight:bold;
+  transition: all 0.2s;
+  min-width: 200px;
+  padding: 0px 30px;
+  font-family: "Roboto";
+  font-weight: bold;
 }
 .group {
-    margin-left:auto;  
+  margin-left: auto;
 }
 .members {
-
-  transition:all 0.1s;
-  padding:40px;
-  font-family:'Roboto';
+  transition: all 0.1s;
+  padding: 40px;
+  font-family: "Roboto";
   font-weight: bold;
-  color:#7782A9;
-  background-color:lighten($dark,5%);
+  color: black;
+  font-size: 40px;
+  background-color: white;
 }
 .current {
-  font-weight:bold;
-  margin-right:10px;
+  font-weight: bold;
+  margin-right: 10px;
 }
 .max {
-  opacity:0.5;
-  margin-left:10px;
+  opacity: 0.5;
+  margin-left: 10px;
 }
-
-
-
-// .cardContainer {
-//   display: flex;
-// .card {
-//   margin-left: 1rem;
-//   margin-right: 1rem;
-//   box-shadow: 5px 5px 20px rgb(0 0 0 / 10%);
-//   padding: 1rem;
-//   width: 100%;
-//   height: auto;
-//   .title {
-//     font-size: 2em;
-//     margin-bottom: 1rem;
-//   }
-//   .description {
-//     font-size: 1em;
-//   }
-//   &:hover {
-//     background: rgb(235, 235, 235);
-//     cursor: pointer;
-//   }
-// }
-// }

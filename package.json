@@ -9,11 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mobiscroll/react": "https://npm.mobiscroll.com/@mobiscroll/react-trial/-/react-trial-5.16.0.tgz",
+    "mdb-react-ui-kit": "^3.0.0",
     "next": "12.1.5",
     "path": "^0.12.7",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "yarn": "^1.22.18"
+    "react-profile-card": "^0.1.4",
+    "react-terminal": "^1.2.1",
+    "react-terminal-command": "^2.0.3",
+    "sass": "^1.50.0",
+    "terminal-in-react": "^3.4.2",
+    "twilio": "^3.76.1"
   },
   "devDependencies": {
     "eslint": "8.13.0",
