@@ -23,7 +23,7 @@ const Home = () => {
       <Navbar />
       <div className={styles.main}>
         <h1 className={`${other_styles.title} ${other_styles.large}`}>
-          You break it, we quickfixit
+          You break it, we quickfixit.
         </h1>
         <Button title="Get started" redirect="/api/auth/login" />
         <div className={styles.vertical_spacer} />

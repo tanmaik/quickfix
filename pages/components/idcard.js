@@ -98,16 +98,14 @@ class UserCards extends Component {
                                   styles["md-mobile-picker-header"]
                                 }
                               ></div>
-                              <Datepicker
-                                controls={["calendar"]}
-                                inputComponent="input"
-                                inputProps={inputProps}
-                                onChange={change}
+                              <label> </label>
+                              <input
+                                type="date"
+                                min="2019-01-01"
+                                max="2022-12-31"
                               />
                               <Link href="/conf">
-                                <button className={styles.simple}>
-                                  Confirm Booking
-                                </button>
+                                <button className={styles.simple}>Book</button>
                               </Link>
                             </div>
                           </div>

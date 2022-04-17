@@ -18,30 +18,15 @@ $dark: #131325;
 }
 
 .text {
-  display: none;
+  display: block;
 }
 
 .mbsc {
-  background-color: #ffc008;
+  background-color: #1c1f27;
 }
 
 .wrapper {
   width: auto;
-}
-
-.wrapper:hover .circular--portrait {
-  display: none;
-  transition: 0.2s;
-}
-
-.wrapper:hover .mbsc {
-  display: block;
-  transition: 0.2s;
-}
-
-.wrapper:hover .text {
-  display: block;
-  transition: 0.2s;
 }
 
 .circular--portrait {
@@ -144,12 +129,13 @@ $dark: #131325;
 }
 button.simple {
   cursor: pointer;
-  color: #ccc;
-  border: none;
+  color: #11141c;
+  border-radius: 5px;
   outline: none;
   font-weight: 600;
-  background-color: #1c1f27;
-  padding: 15px 20px;
+  background-color: white;
+  padding: 8px 8px;
+  margin-left: 5px;
   transition: all 0.6s;
 }
 // .bottom {
