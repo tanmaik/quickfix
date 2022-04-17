@@ -7,7 +7,7 @@ setOptions({
   themeVariant: "light",
 });
 
-export default function Test() {
+function App() {
   const [openPicker, setOpenPicker] = React.useState(false);
   const [date, setDate] = React.useState(new Date());
 
@@ -24,29 +24,9 @@ export default function Test() {
     placeholder: "Please Select...",
   };
 
-  const boxInputProps = {
-    className: "md-mobile-picker-box-label",
-    inputStyle: "box",
-    placeholder: "Please Select...",
-  };
-
   return (
     <Page>
       <div className="mbsc-grid">
-        <div className="mbsc-form-group">
-          <div className="mbsc-row">
-            <div className="mbsc-col-12">
-              <div className="mbsc-txt-muted md-mobile-picker-header">
-                Use the picker with any inputs & show on focus/click
-              </div>
-              <Datepicker
-                controls={["calendar"]}
-                inputComponent="input"
-                inputProps={inputProps}
-              />
-            </div>
-          </div>
-        </div>
         <div className="mbsc-form-group">
           <div className="mbsc-row">
             <div className="mbsc-col-12 mbsc-txt-muted md-mobile-picker-header">
@@ -76,23 +56,9 @@ export default function Test() {
             </div>
           </div>
         </div>
-        <div className="mbsc-form-group">
-          <div className="mbsc-row">
-            <div className="mbsc-col-12">
-              <div className="mbsc-txt-muted md-mobile-picker-header">
-                Use the picker with a Mobiscroll input
-              </div>
-              <Datepicker controls={["calendar"]} inputProps={boxInputProps} />
-            </div>
-          </div>
-        </div>
-        <div className="mbsc-txt-muted md-mobile-picker-header">
-          Use the picker inline in any page
-        </div>
-      </div>
-      <div className="md-mobile-picker-inline">
-        <Datepicker display="inline" controls={["calendar"]} />
       </div>
     </Page>
   );
 }
+
+export default App;

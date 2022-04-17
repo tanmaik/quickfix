@@ -5,11 +5,12 @@ import Button from "./components/Button.js";
 import Calendar from "./components/calendar";
 import UserCards from "./components/idcard";
 import Test from "./components/test";
+import { useEffect } from "react";
 
 export default function Home() {
   return (
     <div>
-      <UserCards job="plumber" />
+      <UserCards job="test" />
     </div>
   );
 }
