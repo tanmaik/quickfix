@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import Image from "next/image";
 import styles from "./IDdesign.module.scss";
+import "@mobiscroll/react/dist/css/mobiscroll.min.css";
+import { Datepicker, Button, Page, setOptions } from "@mobiscroll/react";
+import Link from "next/link";
+import ReactDom from "react-dom";
+
+setOptions({
+  theme: "ios",
+  themeVariant: "light",
+});
 
 class UserCards extends Component {
   state = {
@@ -17,7 +26,7 @@ class UserCards extends Component {
   loadData = () => {
     const { per, page, data } = this.state;
     const endpoint = `https://randomuser.me/api/?nat=us&results=${per}&page=${page}`;
-    console.log(endpoint);
+
     fetch(endpoint)
       .then((response) => response.json())
       .then((json) => {
@@ -44,6 +53,15 @@ class UserCards extends Component {
   }
 
   render() {
+    const inputProps = {
+      className: "md-mobile-picker-input",
+      placeholder: "Please Select...",
+    };
+    var date;
+    const change = (ev) => {
+      date = ev.valueText;
+      console.log(JSON.stringify(date));
+    };
     return (
       <div className="clearfix">
         <div className="row">
@@ -65,42 +83,43 @@ class UserCards extends Component {
                           " " +
                           this.uppercase(data.name.last)}
                       </div>
-                      <div className={styles.author}>Plumber</div>
+                      <div className={styles.author}>{this.props.job}</div>
                     </div>
                     <div className={styles["flex-column"] + " " + styles.group}>
                       <div className={styles.members}>
-                        <span className={styles.current}>4 ⭐️</span>
+                        <span className={styles.current}>
+                          {Math.floor(10 * (Math.random() + 3.8)) / 10.0} ⭐️
+                        </span>
                       </div>
                       <div className={styles.hidden + " " + styles.bottom}>
-                        <button className={styles.simple}>Book</button>
+                        <Page>
+                          <div className="mbsc-grid">
+                            <div className="mbsc-form-group">
+                              <div className="mbsc-row">
+                                <div className="mbsc-col-12">
+                                  <div className="mbsc-txt-muted md-mobile-picker-header"></div>
+
+                                  <Datepicker
+                                    controls={["calendar"]}
+                                    inputComponent="input"
+                                    inputProps={inputProps}
+                                    onChange={change}
+                                  />
+                                  <Link href="/conf">
+                                    <button className={styles.simple}>
+                                      Confirm Booking
+                                    </button>
+                                  </Link>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </Page>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <div className="card">
-                <div className="card-body">
-                  <div className="avatar">
-                    <img
-                      src={data.picture.large}
-                      className="card-img-top"
-                      alt=""
-                    />
-                  </div>
-                  <h5 className="card-title">
-                    {this.uppercase(data.name.first) +
-                      " " +
-                      this.uppercase(data.name.last)}
-                  </h5>
-                  <p className="card-text">
-                    {data.location.city +
-                      ", " +
-                      this.uppercase(data.location.state)}
-                    <br />
-                    <span className="phone">{data.phone}</span>
-                  </p>
-                </div>
-              </div> */}
             </div>
           ))}
         </div>
