@@ -31,14 +31,17 @@ $dark: #131325;
 
 .wrapper:hover .circular--portrait {
   display: none;
+  transition: 0.2s;
 }
 
 .wrapper:hover .mbsc {
   display: block;
+  transition: 0.2s;
 }
 
 .wrapper:hover .text {
   display: block;
+  transition: 0.2s;
 }
 
 .circular--portrait {
@@ -73,6 +76,7 @@ $dark: #131325;
 
 .text:hover {
   border-radius: 0;
+  transition: 0.2s;
   cursor: pointer;
 }
 

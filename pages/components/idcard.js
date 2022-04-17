@@ -4,12 +4,10 @@ import Head from "next/head";
 import styles from "./IDdesign.module.scss";
 import { Datepicker, Button, Page, setOptions } from "@mobiscroll/react";
 import Link from "next/link";
-
 setOptions({
   theme: "ios",
   themeVariant: "light",
 });
-
 class UserCards extends Component {
   state = {
     data: [],
@@ -17,11 +15,9 @@ class UserCards extends Component {
     page: 1,
     total_pages: null,
   };
-
   uppercase = (word) => {
     return word.charAt(0).toUpperCase() + word.slice(1);
   };
-
   loadData = () => {
     const { per, page, data } = this.state;
     const endpoint = `https://randomuser.me/api/?nat=us&results=${per}&page=${page}`;
@@ -36,7 +32,6 @@ class UserCards extends Component {
         });
       });
   };
-
   loadMore = () => {
     this.setState(
       (prevState) => ({
@@ -46,11 +41,9 @@ class UserCards extends Component {
       this.loadData
     );
   };
-
   componentDidMount() {
     this.loadData();
   }
-
   render() {
     const inputProps = {
       className: "md-mobile-picker-input",
@@ -71,7 +64,6 @@ class UserCards extends Component {
             rel="stylesheet"
           />
         </Head>
-
         <div className={styles.clearfix}>
           <div className={styles.container}>
             {this.state.data.map((data) => (
@@ -93,7 +85,7 @@ class UserCards extends Component {
                       " " +
                       this.uppercase(data.name.last)}
                     {"\n"}
-                    {Math.floor(10 * (Math.random() + 3.8)) / 10} ⭐️
+                    {Math.floor(10 * (Math.random() + 3.8)) / 10} stars
                     <Page>
                       <div className={styles.mbsc}>
                         <div className={styles["mbsc-form-group"]}>
@@ -106,7 +98,6 @@ class UserCards extends Component {
                                   styles["md-mobile-picker-header"]
                                 }
                               ></div>
-
                               <Datepicker
                                 controls={["calendar"]}
                                 inputComponent="input"
@@ -125,7 +116,6 @@ class UserCards extends Component {
                     </Page>
                   </div>
                 </div>
-
                 {/* </div> */}
                 {/* <div className={styles["flex-column"] + " " + styles.info}>
                       <div className={styles.title}>
@@ -195,5 +185,4 @@ class UserCards extends Component {
     );
   }
 }
-
 export default UserCards;

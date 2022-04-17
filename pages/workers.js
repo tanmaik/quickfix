@@ -1,10 +1,10 @@
 import UserCards from "./components/idcard";
-// import Test from "./components/test";
+import Navbar from "./components/specialized/NavBar/Navbar";
 export default function workers() {
   return (
     <div>
+      <Navbar />
       <UserCards />
-      {/* <Test /> */}
     </div>
   );
 }
