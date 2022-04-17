@@ -1,0 +1,245 @@
+$dark: #131325;
+.clearfix {
+  background-color: #11141c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.circular--portrait {
+  display: block;
+}
+
+.text {
+  display: none;
+}
+
+.mbsc {
+  background-color: #ffc008;
+}
+
+.wrapper {
+  width: auto;
+}
+
+.wrapper:hover .circular--portrait {
+  display: none;
+}
+
+.wrapper:hover .mbsc {
+  display: block;
+}
+
+.wrapper:hover .text {
+  display: block;
+}
+
+.circular--portrait {
+  border: 10px solid #1c1f27;
+  margin: 25px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+}
+
+// .circular--portrait:after {
+//   border: 10px solid #1c1f27;
+//   margin: 25px;
+//   position: relative;
+//   width: 800px;
+//   height: 800px;
+//   overflow: hidden;
+//   transition: all 0.3s ease-in-out;
+// }
+// .text:hover {
+//   width: 350px;
+//   height: 350px;
+//   border: 10px solid #1c1f27;
+// }
+
+// .circular--portrait:hover:before {
+//   transform: translateX(50%) scale(2.5);
+// }
+
+.text:hover {
+  border-radius: 0;
+  cursor: pointer;
+}
+
+// .circle:hover .text {
+//   padding-top: 40px;
+//   opacity: 1;
+// }
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  // display: flex;
+  // // flex-direction: row;
+  // justify-content: center;
+  // // background-color: #1c1F27;
+  // width: 20%;
+  // border-radius: 50%;
+  // box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+// .flex-column {
+//   display: flex;
+//   flex-flow: column;
+// }
+.title {
+  font-size: 1em;
+  color: black;
+  letter-spacing: 1px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.author {
+  font-size: 50px;
+  font-weight: normal;
+  color: #888;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.center {
+  align-items: center;
+  top: 50%;
+  left: 50%;
+}
+.list {
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: lighten($dark, 8%);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 90px;
+}
+.card {
+  cursor: pointer;
+  min-width: 700px;
+  margin-bottom: 4px;
+  perspective: 600px;
+  transition: all 0.1s;
+  animation: slideMe 0.8s ease-in;
+}
+button.simple {
+  cursor: pointer;
+  color: #ccc;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  background-color: #1c1f27;
+  padding: 15px 20px;
+  transition: all 0.6s;
+}
+// .bottom {
+//   height: 0px;
+//   overflow: hidden;
+//   width: 200px;
+//   font-size: 12px;
+//   color: #777;
+//   font-weight: normal;
+// }
+// .open {
+//   padding: 30px;
+//   height: auto;
+// }
+// .bottom {
+//   height: 0px;
+//   overflow: hidden;
+//   width: 200px;
+//   font-size: 12px;
+//   color: #000000;
+//   font-weight: normal;
+// }
+// .open {
+//   padding: 30px;
+//   height: auto;
+// }
+// .bottom {
+//   margin-top: 10px;
+//   height: 100%;
+//   overflow: visible;
+// }
+.book {
+  border-radius: 50%;
+  // transform: rotateY(50deg);
+  // box-shadow: -10px 10px 10px 2px rgba(0, 0, 0, 0.2), -2px 0px 0px 0px #888;
+  // transition: all 0.5s;
+  // transition-delay: 0.05s;
+  // border-style: solid;
+  // border-width: 5px;
+  // border-bottom-width:25px;
+}
+.info {
+  transform: translate(0, -10px);
+}
+.members {
+  padding: 15px 20px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+@keyframes slideMe {
+  0% {
+    transform: skewX(0deg) translateX(-500px);
+  }
+  100% {
+    transform: skewX(00deg);
+  }
+}
+.book:hover {
+  box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -2px);
+}
+
+.book {
+  transition: all 0.5s;
+  width: 120px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.info {
+  transition: all 0.2s;
+  min-width: 200px;
+  padding: 0px 30px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+.group {
+  margin-left: auto;
+}
+.members {
+  transition: all 0.1s;
+  padding: 40px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  background-color: white;
+}
+.current {
+  font-weight: bold;
+  margin-right: 10px;
+
+  font-family: "Source Sans Pro", sans-serif;
+}
+.max {
+  opacity: 0.5;
+  margin-left: 10px;
+}
