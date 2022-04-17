@@ -1,16 +1,21 @@
 .outline {
+  padding: 0 2%;
   text-align: center;
-  width: 20%;
-  height: 9%;
-  background: rgb(35, 88, 168);
+  width: 12%;
+  height: 2%;
+  background: #ffc008;
+  /* background: #486ce4; */
   border-radius: 30px;
   transition: 0.2s;
   font-size: 1rem;
 }
 
 .outline:hover {
-  background: rgb(81, 118, 173);
+  width: 14%;
+  background: #fee085;
+  /* background: #708ae0; */
   font-size: 1.2rem;
+  border-radius: 35px;
   transition: 0.2s;
   cursor: pointer;
 }

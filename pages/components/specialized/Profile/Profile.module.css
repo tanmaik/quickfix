@@ -1,0 +1,18 @@
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  max-width: 15%;
+  border-radius: 100%;
+}
+.name {
+  font-size: 2rem;
+  display: inline-block;
+  text-align: center;
+}
+.pointer {
+  text-decoration: underline;
+  color: #ffc008;
+  cursor: pointer;
+}

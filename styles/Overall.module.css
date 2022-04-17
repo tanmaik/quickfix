@@ -1,6 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+
 .large {
   font-size: 2.5rem;
 }
 .title {
   color: white;
+  width: 27%;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.title_behind {
+  color: #ffc008;
+  width: 27%;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.background {
+  /* background-image: url("https://wallpaperaccess.com/full/1276415.jpg"); */
+  background-image: url("https://wallpaperaccess.com/full/492728.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.center {
+  justify-content: left;
+  align-items: left;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
