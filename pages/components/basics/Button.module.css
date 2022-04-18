@@ -1,19 +1,21 @@
 .outline {
   padding: 0 2%;
   text-align: center;
-  width: 12%;
+  width: 14%;
   height: 2%;
   background: #ffc008;
   /* background: #486ce4; */
+  color: black;
   border-radius: 30px;
   transition: 0.2s;
   font-size: 1rem;
 }
 
 .outline:hover {
-  width: 14%;
+  width: 20%;
   background: #fee085;
   /* background: #708ae0; */
+  color: rgb(72, 72, 72);
   font-size: 1.2rem;
   border-radius: 35px;
   transition: 0.2s;

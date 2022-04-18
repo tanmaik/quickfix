@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import styles from "./IDdesign.module.scss";
-import { Datepicker, Button, Page, setOptions } from "@mobiscroll/react";
+import { Datepicker, Page, setOptions } from "@mobiscroll/react";
 import Link from "next/link";
+import Button from "./basics/Button";
 setOptions({
   theme: "ios",
   themeVariant: "light",
@@ -56,14 +57,6 @@ class UserCards extends Component {
     };
     return (
       <>
-        <Head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
         <div className={styles.clearfix}>
           <div className={styles.container}>
             {this.state.data.map((data) => (
@@ -175,7 +168,9 @@ class UserCards extends Component {
                 this.loadMore();
               }}
             >
-              <span class="tooltip">Load More Users</span>
+              <span className={styles.tooltip}>Load More Users</span>
+
+              {/* <Button title="Load More" redirect="" /> */}
             </button>
           </div>
         </div>

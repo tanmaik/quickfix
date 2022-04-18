@@ -14,7 +14,7 @@
 .main:hover {
   width: 270px;
   height: 270px;
-  background: #30333e;
+  background: #cc9900;
   transition: 0.5s;
   cursor: pointer;
 }

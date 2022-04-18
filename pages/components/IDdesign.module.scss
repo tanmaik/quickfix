@@ -100,6 +100,11 @@ $dark: #131325;
   letter-spacing: 1px;
   font-family: "Source Sans Pro", sans-serif;
 }
+.tooltip {
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
 .author {
   font-size: 50px;
   font-weight: normal;
@@ -127,13 +132,13 @@ $dark: #131325;
   transition: all 0.1s;
   animation: slideMe 0.8s ease-in;
 }
-button.simple {
+.simple {
   cursor: pointer;
   color: #11141c;
   border-radius: 5px;
   outline: none;
   font-weight: 600;
-  background-color: white;
+  background-color: #ffc008;
   padding: 8px 8px;
   margin-left: 5px;
   transition: all 0.6s;
